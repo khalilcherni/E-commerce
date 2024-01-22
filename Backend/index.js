@@ -3,6 +3,7 @@ const cors = require('cors');
 const IphonesRoute = require('./routes/iphones');
 const Garoute = require('./routes/galaxy');
 const opporoutes=require('./routes/oppo')
+const infinixrouter=require('./routes/infinix')
 const app = express();
 const PORT = 3000;
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use('/api/iphones', IphonesRoute);
 app.use('/api/galaxy', Garoute);
 app.use('/api/oppo', opporoutes);
+app.use('/api/in', infinixrouter);
 
 app.get('/api', (req, res) => {
   res.send('Hello from the server!');

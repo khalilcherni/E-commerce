@@ -5,6 +5,7 @@ import Popular from "../components/Iphones";
 
 import React from 'react'
 import Addproduct from "../components/Add";
+import Infinix from "../components/Infinix";
 
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
         <Popular/>
         <Galaxy/>
         <Oppo/>
+        <Infinix/>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "@splidejs/splide/dist/css/splide.min.css";
 
-function Popular2() {
+function Popular() {
   const [data, setData] = useState([]);
   const [newPrice, setNewPrice] = useState('');
   const [newName, setnewName] = useState('');
@@ -12,13 +12,13 @@ function Popular2() {
   const [editingId, setEditingId] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/iphones/getAll')
+    axios.get('http://localhost:3000/api/in/get')
       .then(res => setData(res.data))
       .catch(err => console.log(err));
   }, []);
 
   const handledelete = (id) => {
-    axios.delete(`http://localhost:3000/api/iphones/delete/${id}`)
+    axios.delete(`http://localhost:3000/api/in/delete/${id}`)
       .then(() => {
         const updatedData = data.filter(e => e.id !== id);
         setData(updatedData);
@@ -35,7 +35,7 @@ function Popular2() {
   }
 
   const updateProduct = (id) => {
-    axios.put(`http://localhost:3000/api/iphones/put/${id}`, { price: newPrice, name: newName, imageUrl: newImage })
+    axios.put(`http://localhost:3000/api/in/put/${id}`, { price: newPrice, name: newName, imageUrl: newImage })
       .then(() => {
         const updatedData = data.map(item => {
           if (item.id === id) {
@@ -56,7 +56,7 @@ function Popular2() {
   return (
     <div>
       <Wrapper>
-        <h3>Iphones </h3>
+        <h3>Infinix </h3>
 
         <Splide options={{
           perPage: 4,
@@ -115,7 +115,7 @@ function Popular2() {
   );
 }
 
-export default Popular2;
+export default Popular;
 
 const Wrapper= styled.div`
  margin: 4rem 0 rem 
