@@ -70,7 +70,7 @@ function Popular() {
             <SplideSlide key={e.id}>
               <Card className='glxy'>
                 <img className='img' src={e.imageUrl} alt="" />
-                <p>{e.name}hello</p>
+                <p>{e.name}</p>
                 <p> Price:{e.price}dt </p>
 
                 <div>
