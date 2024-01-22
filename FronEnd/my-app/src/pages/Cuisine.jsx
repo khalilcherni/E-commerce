@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 function Cuisine() {
   const { type } = useParams();
 
-  const filteredData = data.filter((cuisine) => cuisine.type === type);
+  // const filteredData = data.filter((cuisine) => cuisine.type === type);
 
   return (
     <Grid>

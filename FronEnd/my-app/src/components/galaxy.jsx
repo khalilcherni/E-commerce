@@ -5,12 +5,12 @@ import axios from 'axios'
 import {Splide,SplideSlide} from '@splidejs/react-splide'
 import "@splidejs/splide/dist/css/splide.min.css"
 
-function Popular() {
+function Galaxy() {
   const [data,setData]=useState([])
  
   //  const [view, setView] = useState('productDetails')
   useEffect(()=>{
-  axios.get('http://localhost:3000/api/iphones/getAll')
+  axios.get('http://localhost:3000/api/galaxy/get')
   .then(res=>setData(res.data))
   .catch(err=>console.log(err))
   
@@ -21,7 +21,7 @@ function Popular() {
     <div >
 
 <Wrapper >
-<h3>Iphones </h3>
+<h3>Galaxy </h3>
 <Splide options={{
   perPage:4,
   arrows:false,
@@ -86,4 +86,4 @@ object-fit:cover
 
 `
 
-export default Popular
+export default Galaxy

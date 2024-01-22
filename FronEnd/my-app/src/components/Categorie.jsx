@@ -1,27 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { FaPizzaSlice, FaHamburger } from 'react-icons/fa';
-import { GiNoodles, GiChopsticks } from 'react-icons/gi';
+import { MdOutlinePhonelinkRing  } from 'react-icons/md';
+
 
 function Categorie() {
   return (
     <List>
       <Slink to={'/cuisine/Italien'}>
-        <FaPizzaSlice />
-        <h4>Italien</h4>
+        <MdOutlinePhonelinkRing  />
+        <h4>Iphones</h4>
       </Slink>
       <Slink to={'/cuisine/American'}>
-        <FaHamburger />
-        <h4>American</h4>
+        <MdOutlinePhonelinkRing  />
+        <h4>Glaxy</h4>
       </Slink>
       <Slink to={'/cuisine/Taifood'}>
-        <GiNoodles />
-        <h4>Taifood</h4>
+        <MdOutlinePhonelinkRing />
+        <h4>Infinix</h4>
       </Slink>
       <Slink to={'/cuisine/Japannese'}>
-        <GiChopsticks />
-        <h4>Japannese</h4>
+        <MdOutlinePhonelinkRing />
+        <h4>Oppo</h4>
       </Slink>
     </List>
   );
