@@ -1,6 +1,6 @@
 import Pages from './pages/Pages'
 
-
+import './index.css'
 import Categorie from './components/Categorie';
 import { BrowserRouter}from 'react-router-dom'
 

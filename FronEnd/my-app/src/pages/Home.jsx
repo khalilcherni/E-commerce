@@ -1,4 +1,5 @@
 
+import Oppo from "../components/oppo";
 import Galaxy from "../components/galaxy";
 import Popular from "../components/Iphones";
 
@@ -9,6 +10,7 @@ function Home() {
     <div>
         <Popular/>
         <Galaxy/>
+        <Oppo/>
     </div>
   )
 }
