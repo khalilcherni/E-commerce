@@ -1,25 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { MdOutlinePhonelinkRing  } from 'react-icons/md';
-
-
+import { MdOutlinePhonelinkRing } from 'react-icons/md';
+import '../index.css'
 function Categorie() {
+  const handleButtonClick = () => {
+    window.location.href = 'https://www.apple.com/fr/iphone-15/';
+  };
+
   return (
     <List>
-      <Slink to={'/cuisine/Italien'}>
-        <MdOutlinePhonelinkRing  />
-        <h4>Iphones</h4>
+      <Slink>
+        <MdOutlinePhonelinkRing />
+        <button  className="button-12" onClick={handleButtonClick}>Iphones</button>
       </Slink>
-      <Slink to={'/cuisine/American'}>
-        <MdOutlinePhonelinkRing  />
+      <Slink>
+        <MdOutlinePhonelinkRing />
         <h4>Glaxy</h4>
       </Slink>
-      <Slink to={'/cuisine/Taifood'}>
+      <Slink>
         <MdOutlinePhonelinkRing />
         <h4>Infinix</h4>
       </Slink>
-      <Slink to={'/cuisine/Japannese'}>
+      <Slink>
         <MdOutlinePhonelinkRing />
         <h4>Oppo</h4>
       </Slink>
@@ -32,38 +35,40 @@ const List = styled.div`
   justify-content: center;
   margin: 2rem 0rem;
 `;
-const Slink= styled(NavLink)`
-display:flex;
-flex-dirction:column;
-justify-content;
-align-items:center;
-border-radius:50%;
-margin-right:2rem;
-text-decoration:none;
-background: linear-gradient(35deg,#494949,#313131);
-width:4rem;
-height:4rem;
-cursor :pointer;
-transform:scale(0.8);
-h4{
-    color:white;
-    font-size:0.8rem;
-}
-svg{
-    color:white;
-    font-size:1.5rem;
-}
-&.active {
-    background:linear-gradient(to right ,#f27121,#e94057);
-    svg{
-        color:white;
-       
-    }
-    h4{
-        color:white;
-       
-    }
-}
 
-`
+const Slink = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 2rem;
+  text-decoration: none;
+  background: linear-gradient(35deg, #494949, #313131);
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  transform: scale(0.8);
+
+  h4 {
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  svg {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  &.active {
+    svg {
+      color: white;
+    }
+    h4 {
+      color: white;
+    }
+  }
+  
+`;
+
 export default Categorie;
