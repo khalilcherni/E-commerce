@@ -92,7 +92,7 @@ const StyledButton = styled.button`
   top: 79%;
   left: 7%;
   transform: translate(100%, -50%);
-  background-color: #3498db;
+  background-color: grey;
   color: white;
   border: none;
   border-radius: 5px;

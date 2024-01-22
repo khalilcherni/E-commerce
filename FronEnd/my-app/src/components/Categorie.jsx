@@ -10,7 +10,7 @@ function Categorie() {
 
   return (
     <List>
-      <Slink>
+          <Slink as={NavLink} to="/iphones">
         <MdOutlinePhonelinkRing />
         <button  className="button-12" onClick={handleButtonClick}>Iphones</button>
       </Slink>

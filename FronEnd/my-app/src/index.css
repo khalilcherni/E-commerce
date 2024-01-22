@@ -1,11 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
- font-family: Didot, serif;
+  font-family: Didot, serif;
 }
-
 
 body {
   margin: 0;
@@ -25,11 +23,11 @@ code {
     monospace;
 }
 
-.img{
+.img {
   margin-top: 10%;
 }
 
-.glxy p{
+.glxy p {
   margin-top: 10%;
 }
 
@@ -41,7 +39,6 @@ code {
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   border-radius: 6px;
   border: none;
-
   background: #6E6D70;
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
   color: #DFDEDF;
@@ -54,14 +51,16 @@ code {
   box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
 }
+
 .add-product-container {
   position: fixed;
-  top: 50px; /* Adjust the top value according to your preference */
-  right: 10px; /* Adjust the right value according to your preference */
+  top: 50px;
+  right: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .input-container {
   position: relative;
   margin-bottom: 30px;
@@ -93,8 +92,8 @@ code {
   transition: transform 0.3s ease-in-out;
 }
 
-.input-container input:focus + label,
-.input-container input:valid + label {
+.input-container input:focus+label,
+.input-container input:valid+label {
   transform: translateY(-25px);
   font-size: 14px;
   color: #e74c3c;
@@ -140,7 +139,6 @@ code {
 .input-container input:-ms-input-placeholder {
   color: #95a5a6;
 }
-
 
 .button-85 {
   padding: 0.6em 2em;
@@ -209,4 +207,3 @@ code {
   border-radius: 10px;
 }
 
-/* Add any additional styling you need */

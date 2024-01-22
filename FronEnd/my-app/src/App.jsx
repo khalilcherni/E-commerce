@@ -14,6 +14,7 @@ function App() {
 <Nav>
   <RiSmartphoneFill/>
 <Logo to={"/"}> Phones </Logo>
+
 </Nav>
 <Search/>
 <Categorie/>
@@ -25,12 +26,12 @@ function App() {
 }
 const Logo = styled(Link)`
 text-decoration:none;
-font-size: 1.5rem;
-font-weight :400  ;
+font-size: 1.4rem;
+font-weight :300%  ;
 font-family : 'Lobster Two, cursive '
 `
 const Nav=styled.div`
-padding: 2rem 0rem;
+padding: 1rem 0rem;
 display:flex;
 justify-content: flex-start;
 align-items;
